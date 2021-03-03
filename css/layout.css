@@ -1,0 +1,528 @@
+@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*reset End*/
+
+
+html{
+	margin:0 auto;
+	padding:0;
+	height:auto;
+	width:100%;
+	font-family:"Aria",Gadget,sans-serif,Microsoft JhengHei,"微軟正黑體";
+	font-size:16px;
+}
+
+body{
+	background-color:#E5E5E5;
+	line-height: 20px;
+}
+
+.topmenu{
+	width: 100%;
+	height: 40px;
+	background-color: #E0E0E0;
+	position: fixed;
+	z-index: 1000;
+}
+
+.PCW{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.logo{
+	position: absolute;
+	padding-top:10px;
+	padding-left: 25px;
+}
+.logo img{
+	width: 55%;
+}
+.tits{
+	display: block;
+	width: 100%;
+	height: 40px;
+}
+.menu{
+	display: none;
+}
+.menu ul li{
+	float: left;
+	padding-top: 35px;
+}
+.menu ul li a{
+	color: #7D6C4B;
+	font-weight:bold;
+	text-decoration:none;
+}
+.menu ul li a:hover{
+	color: #563c1a;
+}
+.menu ul li a img{
+	margin-top: -10px;
+}
+.menu ul li  img{
+	margin-top: -35px;
+}
+
+.topmenu ul{
+	position: absolute;
+	right: 20%;
+}
+#TOP-MENU #BTN{ /* 製作手機版 右上角的按鈕 */
+	display:block;
+	width:45px;
+	height:51px;
+	background-image:url(../images/menu.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+
+	position:absolute;
+	right:5px;
+	top:0px;
+	text-indent:-9999px;
+	z-index:999;
+}
+.myMOUSE {
+	cursor: pointer;
+}
+#NAV{
+	position:fixed; /* position 可以讓 div 跳脫原本在 HTML 內的位置 */
+	top:0;
+	z-index:888;
+	
+	width:100%; /* 寬高 100% 整個蓋住 */
+	height:100%;
+	background-color:rgba(0,0,0,0.7);
+	
+	display:none; /* 把主選單先關掉 */
+}
+
+#NAV ul{
+	width:50%;
+	height:35%;
+	position:absolute; /* 把 ul 選單 上下左右都置中 */
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+}
+
+#NAV li{
+	width:100%;
+	float:none;
+	height: 15%;
+}
+
+#NAV li a{
+	display:block;
+	width:100%;
+	padding:3% 0;
+
+	text-align:center;
+	text-decoration:none;
+	background-color:#d9b544;
+	border:1px solid #fff;
+	color:#000;
+	font-size:20px;
+}
+
+#NAV li a:hover{
+	background-color:#e1cf9c;
+	border:1px solid #CCC;
+}
+
+#NAV #XX{ 			/*選單之內右上角的 X 按鈕*/
+	display:block;
+	width:30px;
+	height:30px;
+	background-color:#FFF;
+	color:#7D6C4B;
+	border-radius:50%;
+	text-align:center;
+	line-height:30px;
+	position:absolute;
+	right:-15px; /* 凸出去 */
+	top:-5px;
+	font-size:20px;	
+}
+
+
+.bg-e0{
+	background-color: #E0E0E0;
+	color: #7D6C4B;
+}
+
+.h2{
+	color: #7D6C4B;
+}
+
+.PC{
+	display: none;
+}
+
+.MB{
+	display: block;
+}
+.mapbg{
+	background-image: url(../images/picmap.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: contain;
+}
+.PICmap{
+	position: relative;
+	width: 100%;
+}
+.PICmap img{
+	width: 100%;
+}
+.picmapa{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 777;
+}
+.picmapa1{
+	z-index: 778;
+}
+.picmapa img{
+	/*width: 50%;*/
+	float: right;
+}
+.pic07 img{
+	width: 65%;
+}
+.txt {
+	margin: 0 auto; 
+	margin-top: 2rem; 
+    position: static;
+    display: block;
+    max-width:980px;
+    overflow: visible;
+    line-height: 1.4;
+    text-align: left;
+    width: 100%;
+}
+
+.txt-img {
+    width: 100%;
+    float: left;
+}
+.txt-text{
+	display: block;
+	float: right;
+	background-color: #C4C4C4;
+	width: 100%;
+	padding: 0 20px;
+}
+.txt-text02{
+	display: block;
+	float: right;
+	background-color: #C4C4C4;
+	width: 100%;
+	padding: 0 20px;
+}
+.dt{
+	font-weight:bold;
+}
+.youtube{
+	border:15px #fff solid;
+	max-width: 1280px;
+	margin:0 auto;
+}
+
+
+
+.fivesr{
+	position: relative;
+	width: 100%;
+}
+.fivesa{
+	position: absolute;
+	top: 25%;
+	left: 2%;
+}
+.fivesa img{
+	width:26%;
+}
+.mom{
+	margin:0 auto; 
+	width: 100%;
+	background-color: #8b8b8b;
+	background-image: url(../images/picmomb.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.momr{
+	position: relative;
+}
+.moma{
+	position: absolute;
+	top: 65%;
+	left: 2%;
+}
+.moma img{
+	width:35%;
+}
+.logobottom{
+	margin:0 auto; 
+	text-align: center;
+	max-width: 230px;
+	padding-top: 3%;
+}
+
+.svgsize img{
+	width: 10%;
+	padding:3%  1%;
+}
+
+
+#abgnePC{
+	display: none;
+}
+#abgne_float_ad {
+	display: none;
+	position: absolute;
+	z-index:779;
+	width: 154px;
+}
+#abgne_float_ad .abgne_close_ad {
+	display: block; 
+	text-align: right;
+	cursor: pointer;
+	font-size: 12px;
+}
+#abgne_float_ad a img {
+	border: none;
+
+}
+.logobottom img{
+	width: 65%;
+}
+
+footer{
+	margin:0 auto; 
+	text-align: center;
+	margin:2% 0;
+}
+@media screen and (min-width: 376px) {
+.svgsize img{
+	width: 10%;
+	padding:3%  1%;
+}
+}
+@media screen and (min-width: 768px) {
+.PC{
+	display: block;
+}
+
+.MB{
+	display: none;
+}
+
+.txt-img {
+    width: 51%;
+}
+.txt-text{
+	width: 49%;
+	padding-bottom: 6%;
+}
+.txt-text02{
+	width: 49%;
+}
+.fivesa{
+	position: absolute;
+	top: 45%;
+	left: 4%;
+}
+.fivesa img{
+	width:50%;
+}
+.moma{
+	top: 68%;
+	left: 4%;
+}
+.moma img{
+	width:50%;
+}
+.picmapa{
+	bottom: 2%;
+	right: 2%;
+}
+.picmapa img{
+	width: 60%;
+}
+.svgsize img{
+	width: 5%;
+	padding:1%  1%;
+}
+
+
+}
+
+@media screen and (min-width: 992px) {
+.tits{
+	height: 60px;
+}
+
+.topmenu{
+	height: 60px;
+}
+
+.PICmap img{
+	width: 90%;
+}
+.txt-img {
+    width: 40%;
+}	
+.txt-text{
+	width: 60%;
+	padding:38px 20px;
+}
+.txt-text02{
+	width: 60%;
+	padding:16px 20px;
+}
+.fivesa{
+	left: 6%;
+}
+.fivesa img{
+	width:60%;
+}
+.moma img{
+	width:65%;
+}
+#abgnePC{
+	display: block;
+}
+.picmapa{
+	bottom: 5%;
+	right:5%;
+}
+.picmapa img{
+	width: 80%;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+.logo{
+	padding-top:25px;
+}
+.tits{
+	height: 80px;
+}
+#TOP-MENU #BTN{
+	top:20px;
+}
+
+.topmenu{
+	height: 80px;
+}
+.txt-text{
+	padding:44px 20px;
+}
+.txt-text02{
+	padding:22px 20px;
+}
+.fivesa{
+	left: 4%;
+}
+.fivesa img{
+	width:85%;
+}
+.moma img{
+	width:90%;
+}
+.picmapa{
+	bottom: 3%;
+	right: 3%;
+}
+.picmapa img{
+	width: 100%;
+}
+
+
+}
+@media screen and (min-width: 1280px) {
+
+
+.PCW{
+	width: 1280px;
+}
+.logo{
+	padding-top:2%;
+}
+
+.menu{
+	display: block;
+}
+.topmenu ul{
+	right: 10%;
+}
+
+#TOP-MENU #BTN{
+	display:none;
+}
+#NAV{
+	display:none;
+}
+.picmapa{
+	bottom: 10%;
+	right: 5%;
+}
+.svgsize img{
+	width: 3.5%;
+	padding:1%  1%;
+}
+}
