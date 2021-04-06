@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    background-color: #F5F8E3;
 }
 ol, ul {
 	list-style: none;
@@ -108,9 +109,14 @@ h2{
     padding: 10px;
     flex-wrap: wrap;
 }
-.imgbox{
+.bannerimgbox{
     margin: 1%;
     width: 31%;
+    text-align: center;
+}
+.indeximgbox{
+    margin: 1%;
+    width: 45%;
     text-align: center;
 }
 .content img{
