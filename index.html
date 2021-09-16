@@ -20,18 +20,35 @@
 <body>
 <div class="wrap">
     <div class="header">
+        
+       <div class="container" onclick="openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        
         <ul class="menu">
             <li><a href="#">關於Kira33</a></li>
             <li><a href="#">作品一覽</a></li>
             <li><a href="#" class="dropdown">敬請期待</a>
                  <ul class="dropdown-open">
-                    <li><a href="#">練習進度</a></li>
-                    <li><a href="#">隱藏進度</a></li>
-                    <li><a href="#">還在找蟲</a></li>
+                    <li><a href="#">菜單效果</a></li>
+                    <li><a href="#">菜單效果</a></li>
+                    <li><a href="#">菜單效果</a></li>
                 </ul>
             </li>
         </ul>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">關於Kira33</a>
+              <a href="#">作品一覽</a>
+              <a href="#">敬請期待</a>
+            </div>
+        </div>
     </div>
+
     <h1><img src="images/kira.jpg"></h1>
     <!-- Swiper -->
         <div class="swiper mySwiper">
@@ -89,6 +106,22 @@
     <script src="js/lightbox.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/kirajs.js"></script>
+
+    <!-- <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+    </script> -->
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
