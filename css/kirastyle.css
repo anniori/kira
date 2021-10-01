@@ -85,27 +85,100 @@ h1{
     background:#fff;
     color:#000;
 }
+/*卷軸樣式*/
+.qa-zone::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track/*卷軸底色*/
+{
+    background-color: #000;
+}
+
+.qa-zone::-webkit-scrollbar,
+body::-webkit-scrollbar/*卷軸寬度*/
+{
+    width: 8px;
+    background-color: #F5F8E3;
+}
+
+.qa-zone::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb/*卷軸本身*/
+{
+    background-color: rgba(100, 100, 100,0.9);
+}
+
+ 
 
 .wrap{
     margin: 0 auto;
     width: 100%;
-    max-width: 1000px;
 }
-.header{
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 999;
+    transition: all .5s;
+    background-color: #000;
+    box-shadow: 0px 5px 10px rgb(203 203 203 / 50%);
+}
+.headertop{
+    padding-bottom: 60px;
+}
 
+.boxall{
+    margin: 0 auto;
+    max-width: 1000px;
 }
 h2{
     text-align: center;
-    font-size: 35px;
-    padding: 2%;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #f09713;
 }
 h2 span{
-    font-size: 16px;
+    font-size: 1rem;
     color: #aaa;
+    font-weight: normal;
 }
+
+.aboutContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.text-style{
+    line-height: 1.8;
+    margin-right: 100px;
+
+}
+.aboutContainer article p {
+    /* display: table; */
+    color: #f09713;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+}
+.aboutContainer article p span{
+    font-weight:normal;
+}
+.aboutContainer figure {
+    width: 40%;
+    text-align: center;
+}
+.aboutContainer figure img{
+    width: 60%;
+}
+
 .container {display: none;}
 
 .menu{
+    display: flex;
+    align-items: center;
+    height: 60px;
     float: right;
 }
 .menu a{
@@ -114,11 +187,11 @@ h2 span{
     display: block;
     text-align: center;
     transition: all .5s;
-    color: #222120;
+    color: #fff;
 }
 .menu a:hover,.menu a.active{
-    background: #222120;
-    color: #fff;
+    background: #ffffff;
+    color: #000;
 }
 /*>僅為menu裡面第一層li*/
 .menu > li{
@@ -139,37 +212,35 @@ h2 span{
     z-index: 99;
 }
 
-
-.overlay {
+.overlay{
     height: 100%;
-    width: 0;
+    width: 0%;
     position: fixed;
     z-index: 100;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-  }
-  
-  .overlay-content {
+}
+.overlay.active{
+    width: 100%;
+}
+.overlay-content {
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
   }
-  
   .overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: #fff;
     display: block;
     transition: 0.3s;
   }
-  
   .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
   }
@@ -181,8 +252,6 @@ h2 span{
     font-size: 60px;
   }
   
-
-
 
 
 .bigBanner{
@@ -220,46 +289,85 @@ h2 span{
 .spacing{
     padding-bottom: 10%;
 }
+
+.copyright {
+    background-color: #1b222b;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 @media screen and (max-width: 768px) {
 
     .menu{
         display: none;
     }
 
-    .container {
+    .aboutContainer{
+        flex-direction: column;
+    } 
+
+    .navbar {
         display: inline-block;
         cursor: pointer;
         float: right;
         padding: 20px 10px;
-      }
+    }
+    
+    .bar1, .bar2, .bar3 {
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+    }
       
-      .bar1, .bar2, .bar3 {
-        width: 24px;
-        height: 2px;
-        background-color: #333;
-        margin: 5px 0;
-        transition: 0.4s;
-      }
-      
-      .change .bar1 {
+    .change .bar1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-9px, 6px);
-      }
+    }
       
-      .change .bar2 {opacity: 0;}
+    .change .bar2 {opacity: 0;}
       
-      .change .bar3 {
+    .change .bar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
-      }
+    }
 
-        .overlay a {font-size: 20px}
-        .overlay .closebtn {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
         font-size: 40px;
         top: 15px;
         right: 35px;
-        }
-      }
+    }
+    .text-style{
+        margin-right: 0;
+    }
+    .aboutContainer article p{
+        text-align: center;
+    }
+    .aboutContainer figure {
+        width: 100%;
+    }
+    .aboutContainer figure {
+        width: 70%;
+    }
+    .indeximgbox{
+        width: 100%;
+    }
+    .content{
+        justify-content: space-around;
+    }
+    .bannerimgbox{
+        width: 45%;
+    }
+
 }
 
 
