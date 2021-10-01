@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/kirastyle.css?20210915">
     <link rel="shortcut icon" href="#">
 
+    <link rel="stylesheet" href="css/animate.css">
+
+
     <script src="https://kit.fontawesome.com/df67ab4607.js" crossorigin="anonymous"></script>
 
 
@@ -20,81 +23,116 @@
 <body>
 <div class="wrap">
     <div class="header">
-        
-       <div class="container" onclick="openNav()">
+
+       <div class="navbar" onclick="openNav()">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
         
         <ul class="menu">
-            <li><a href="#">關於Kira33</a></li>
-            <li><a href="#">作品一覽</a></li>
-            <li><a href="#" class="dropdown">敬請期待</a>
-                 <ul class="dropdown-open">
+            <li><a href="#a01">關於Kira33</a></li>
+            <li><a href="#a02">網頁作品</a></li>
+            <li><a href="#a03">設計作品</a></li>
+            <!-- <li><a href="#a03" class="dropdown">設計作品</a>
+                <ul class="dropdown-open">
                     <li><a href="#">菜單效果</a></li>
                     <li><a href="#">菜單效果</a></li>
                     <li><a href="#">菜單效果</a></li>
                 </ul>
-            </li>
+            </li> -->
         </ul>
 
-        <div id="myNav" class="overlay">
+        <!-- <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-              <a href="#">關於Kira33</a>
-              <a href="#">作品一覽</a>
-              <a href="#">敬請期待</a>
+              <a href="#a01">關於Kira33</a>
+              <a href="#a02">作品一覽</a>
+              <a href="#a03">設計作品</a>
+            </div>
+        </div> -->
+
+        <div class="overlay">
+            <a href="#" class="closebtn">&times;</a>
+            <div class="overlay-content">
+              <a href="#a01">關於Kira33</a>
+              <a href="#a02">作品一覽</a>
+              <a href="#a03">設計作品</a>
             </div>
         </div>
+
+        
     </div>
 
+    <div class="headertop"></div>
     <h1><img src="images/kira.jpg"></h1>
     <!-- Swiper -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/big01.jpg"></div>
-                <div class="swiper-slide"><img src="images/big02.jpg"></div>
-                <div class="swiper-slide"><img src="images/big03.jpg"></div>
-                <div class="swiper-slide"><img src="images/big04.jpg"></div>
-                <div class="swiper-slide"><img src="images/big05.jpg"></div>
+                <div class="swiper-slide"><img src="images/big01.jpg" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="images/big02.jpg" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="images/big03.jpg" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="images/big04.jpg" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="images/big05.jpg" class="img-fluid"></div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
 
-    <div class="spacing"></div>
-    <h2>網頁設計作品<br><span>點擊banner可連結至活動網頁</span></h2>
-    <div class="content">
-        <div class="indeximgbox"><a href="http://alex.bdmevent.com.tw/" target="_black"><img src="images/pic02.jpg"></a></div>
-        <div class="indeximgbox"><a href="http://restonic.gogoblog.com.tw/" target="_black"><img src="images/pic03.jpg"></a></div>
-        <div class="indeximgbox"><a href="https://tasty.bdmevent.com.tw/" target="_black"><img src="images/pic04.jpg"></a></div>
-        <div class="indeximgbox"><a href="http://arakaki-tsusho.bdmevent.com.tw/creerbeaute/" target="_black"><img src="images/pic05.jpg"></a></div>
-        <div class="indeximgbox"><a href="http://biohairs.bdmevent.com.tw/" target="_black"><img src="images/pic06.jpg"></a></div>
-        <div class="indeximgbox"><a href="https://cleverin.gogoblog.com.tw/" target="_black">加護靈</a></div>
-        <div class="indeximgbox"><a href="http://miele.gogoblog.com.tw/" target="_black">Miele</a></div>
-        <div class="indeximgbox"><a href="http://hua-to.gogoblog.com.tw/" target="_black">華陀扶元堂</a></div>
-        <div class="indeximgbox"><a href="http://snowmilk.gogoblog.com.tw/" target="_black">雪印</a></div>
-        <div class="indeximgbox"><a href="http://shaomei.gogoblog.com.tw/fashion/" target="_black">歐夏蕾</a></div> 
-    </div>
-    <div class="spacing"></div>
-    <h2>banner 設計作品<br><span>點擊banner可看gif效果</span></h2>
-    <div class="content">
-        <div class="bannerimgbox"><a href="images/banner01.gif" data-lightbox="roadtrip"><img src="images/banner01.jpg" ></a><!-- <h2>我是副標題</h2><span>12345678910000</span> --></div>
-        <div class="bannerimgbox"><a href="images/banner02.gif" data-lightbox="roadtrip"><img src="images/banner02.jpg"></a></div>
-        <div class="bannerimgbox"><a href="images/banner03.gif" data-lightbox="roadtrip"><img src="images/banner03.jpg"></a></div>
-        <div class="bannerimgbox"><a href="images/banner04.gif" data-lightbox="roadtrip"><img src="images/banner04.jpg" ></a></div>
-        <div class="bannerimgbox"><a href="images/banner05.gif" data-lightbox="roadtrip"><img src="images/banner05.jpg"></a></div>
-        <div class="bannerimgbox"><a href="images/banner06.gif" data-lightbox="roadtrip"><img src="images/banner06.jpg"></a></div>
-        <div class="bannerimgbox"><a href="images/banner07.gif" data-lightbox="roadtrip"><img src="images/banner07.jpg"></a></div>
-        <div class="bannerimgbox"><a href="images/banner08.gif" data-lightbox="roadtrip"><img src="images/banner08.jpg"></a></div>
-        <div class="bannerimgbox"><a href="images/banner09.gif" data-lightbox="roadtrip"><img src="images/banner09.jpg"></a></div>
-        <div class="bannerimgbox"><a href="images/banner10.gif" data-lightbox="roadtrip"><img src="images/banner10.jpg"></a></div>
-        <div class="bannerimgbox"><a href="images/banner11.gif" data-lightbox="roadtrip"><img src="images/banner11.jpg"></a></div>
-        <div class="bannerimgbox"><a href="images/banner12.gif" data-lightbox="roadtrip"><img src="images/banner12.jpg"></a></div>
-    </div>
-    <div class="footer">
+    
+
+       <div class="boxall">
+
+            <div class="spacing" id="a01"></div>
+            <div class="aboutContainer">
+                <figure class="wow fadeInLeft animated" data-wow-delay="300ms">
+                    <img src="images/kira.png" class="img-fluid" alt="About Kira">
+                </figure>
+                <article class="text-style">
+                  <p class="wow fadeInUp animated" data-wow-delay="200ms">關於<span>Kira</span></p>
+                    廣告設計、數位設計專科畢業<br>
+                    4年網頁相關工作經驗<br>
+                    擅長軟體Photoshop、Illustrator、VScode<br>
+                    熟悉Html、CSS、JQuery、Bootstrap、Git<br>
+                </article>
+                
+            </div>
+
+            <div class="spacing" id="a02"></div>
+            <h2 class="wow fadeInUp animated" data-wow-delay="350ms">網頁設計作品<br><span>點擊可連結至活動網頁</span></h2>
+            <div class="content">
+                <div class="indeximgbox"><a href="http://alex.bdmevent.com.tw/" target="_black"><img src="images/pic02.jpg"></a></div>
+                <div class="indeximgbox"><a href="http://restonic.gogoblog.com.tw/" target="_black"><img src="images/pic03.jpg"></a></div>
+                <div class="indeximgbox"><a href="https://tasty.bdmevent.com.tw/" target="_black"><img src="images/pic04.jpg"></a></div>
+                <div class="indeximgbox"><a href="http://arakaki-tsusho.bdmevent.com.tw/creerbeaute/" target="_black"><img src="images/pic05.jpg"></a></div>
+                <div class="indeximgbox"><a href="http://biohairs.bdmevent.com.tw/" target="_black"><img src="images/pic06.jpg"></a></div>
+                <div class="indeximgbox"><a href="https://cleverin.gogoblog.com.tw/" target="_black">加護靈</a></div>
+                <div class="indeximgbox"><a href="http://miele.gogoblog.com.tw/" target="_black">Miele</a></div>
+                <div class="indeximgbox"><a href="http://hua-to.gogoblog.com.tw/" target="_black">華陀扶元堂</a></div>
+                <div class="indeximgbox"><a href="http://snowmilk.gogoblog.com.tw/" target="_black">雪印</a></div>
+                <div class="indeximgbox"><a href="http://shaomei.gogoblog.com.tw/fashion/" target="_black">歐夏蕾</a></div> 
+            </div>
+
+            <div class="spacing" id="a03"></div>
+            <h2 class="wow fadeInUp animated" data-wow-delay="350ms">Banner 設計作品<br><span>點擊可觀看gif效果</span></h2>
+            <div class="content">
+                <div class="bannerimgbox"><a href="images/banner01.gif" data-lightbox="roadtrip"><img src="images/banner01.jpg" ></a><!-- <h2>我是副標題</h2><span>12345678910000</span> --></div>
+                <div class="bannerimgbox"><a href="images/banner02.gif" data-lightbox="roadtrip"><img src="images/banner02.jpg"></a></div>
+                <div class="bannerimgbox"><a href="images/banner03.gif" data-lightbox="roadtrip"><img src="images/banner03.jpg"></a></div>
+                <div class="bannerimgbox"><a href="images/banner04.gif" data-lightbox="roadtrip"><img src="images/banner04.jpg" ></a></div>
+                <div class="bannerimgbox"><a href="images/banner05.gif" data-lightbox="roadtrip"><img src="images/banner05.jpg"></a></div>
+                <div class="bannerimgbox"><a href="images/banner06.gif" data-lightbox="roadtrip"><img src="images/banner06.jpg"></a></div>
+                <div class="bannerimgbox"><a href="images/banner07.gif" data-lightbox="roadtrip"><img src="images/banner07.jpg"></a></div>
+                <div class="bannerimgbox"><a href="images/banner08.gif" data-lightbox="roadtrip"><img src="images/banner08.jpg"></a></div>
+                <div class="bannerimgbox"><a href="images/banner09.gif" data-lightbox="roadtrip"><img src="images/banner09.jpg"></a></div>
+                <div class="bannerimgbox"><a href="images/banner10.gif" data-lightbox="roadtrip"><img src="images/banner10.jpg"></a></div>
+                <div class="bannerimgbox"><a href="images/banner11.gif" data-lightbox="roadtrip"><img src="images/banner11.jpg"></a></div>
+                <div class="bannerimgbox"><a href="images/banner12.gif" data-lightbox="roadtrip"><img src="images/banner12.jpg"></a></div>
+            </div>
+
+        </div>
+    <div class="footer copyright">
 	Copyright © 2021 Kira33 All Rights Reserved.<br>
     視覺設計．網頁切版<br>
     與我聯繫 Email:<a href="mailto:bearcat33@gmail.com">bearcat33@gmail.com</a>
@@ -105,7 +143,10 @@
     <script src="js/jQuery-3.6.0.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
     <script src="js/kirajs.js"></script>
+    
 
     <!-- <script>
         function myFunction(x) {
@@ -113,7 +154,14 @@
         }
     </script> -->
 
+
+    <!--WOW-->
     <script>
+        new WOW().init();
+    </script>
+
+    <!--phone menu-->
+<!--     <script>
         function openNav() {
           document.getElementById("myNav").style.width = "100%";
         }
@@ -121,8 +169,9 @@
         function closeNav() {
           document.getElementById("myNav").style.width = "0%";
         }
-    </script>
-
+    </script> -->
+    
+    <!--Swiper輪播-->
     <script>
         var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
@@ -147,5 +196,6 @@
           },
         });
       </script>
+      
 </body>
 </html>
