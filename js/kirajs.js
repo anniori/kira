@@ -1,12 +1,3 @@
-$(document).ready(function () {
- 
-    $('.dropdown').click(function (event) { 
-        event.preventDefault();
-         $('.dropdown').toggleClass('active');
-        $('.dropdown-open').slideToggle();
-    });
-});
-
 
 /*--------------gotop-------------------*/
 $(document).ready(function(){
@@ -25,4 +16,23 @@ $(document).ready(function(){
 	});
 });
 
+
+/*--------------menu dropdown-------------------*/
+/* $(document).ready(function () {
+ 
+    $('.dropdown').click(function (event) { 
+        event.preventDefault();
+         $('.dropdown').toggleClass('active');
+        $('.dropdown-open').slideToggle();
+    });
+}); */
+
+/*--------------menu Nav-------------------*/
+
+
+$(document).ready(function(){
+	$('.navbar,.closebtn,.overlay-content a').click(function(){
+		$('.overlay').toggleClass('active');
+	});
+});
 
