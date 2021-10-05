@@ -302,6 +302,14 @@ h2 span{
     max-width: 100%;
     height: auto;
 }
+.link{transition: all .5s; height:20px; line-height:20px; vertical-align:bottom; position: relative;}
+.link::before{ content: '';position: absolute; bottom: -2px; background-color: #e06e7d; height: 2px; width: 0%; transition: all .5s;}
+
+.link:hover::before{width: 100%;}
+
+
+
+.link img{width: 15px;}
 
 @media screen and (max-width: 768px) {
     .spacing{
