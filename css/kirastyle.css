@@ -142,6 +142,13 @@ h2 span{
     font-weight: normal;
 }
 
+h3 span{
+    font-size: 1rem;
+    color: #aaa;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
 .aboutContainer{
     display: flex;
     align-items: center;
@@ -311,6 +318,31 @@ h2 span{
 
 .link img{width: 15px;}
 
+
+.flexbox_common {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.item_four{
+    flex: 0 1 24%;
+}
+
+.item_three{
+    flex: 0 1 33.33333%;
+    color: #ffffff;
+    padding-left: 8%;
+    box-sizing: border-box;
+}
+.item_three span{
+    text-align: left;
+    line-height: 1.2;
+}
+
 @media screen and (max-width: 768px) {
     .spacing{
         padding-bottom: 25%;
@@ -381,6 +413,14 @@ h2 span{
     .swiper-button-next,.swiper-button-prev{
         display: none;
     }
+
+    .item_four{
+    flex: 0 1 49%;
+}
+
+.item_three{
+    flex: 0 1 100%;
+    padding-bottom: 2rem;
 
 }
 
